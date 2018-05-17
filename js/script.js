@@ -11,7 +11,8 @@ $(document).ready(function(){
                   "Project Management Professional",
                   "Agile SCRUM Master",
                   "LEAN Six Sigma Green Belt",
-                  "Information Technology Infrastructure Library"
+                  "ITIL Certified Manager",
+                  "Software Engineer"
                   ],
         typeSpeed: 70,
         loop: true,
@@ -19,7 +20,22 @@ $(document).ready(function(){
         showCursor: false         
     });
 
-
+    $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
 
 
 
