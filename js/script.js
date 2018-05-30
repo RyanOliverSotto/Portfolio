@@ -27,7 +27,13 @@ $(document).ready(function() {
 
 	$('.owl-carousel').owlCarousel({
 	    loop:true,
-	    items: 4,
+		items: 4,
+		autoplay: true,
+		autoplayTimeout:1500,
+		autoplaySpeed:1500,
+		smartSpeed: 1500,
+		slideTransition:'linear',
+		autoplayHoverPause:true,
 	    responsive:{
 	        0:{
 	            items:1
@@ -41,13 +47,8 @@ $(document).ready(function() {
 	        938:{
 	            items:4
 	        }
-	    }
+		}
 	});
-
-
-	
-
-
 	var skillsTopOffset = $(".skillsSection").offset().top;
 	var statsTopOffset = $(".statsSection").offset().top;
 	var countUpFinished = false;
@@ -149,9 +150,6 @@ $(document).ready(function() {
 			body.css("padding-top", 0);
 			body.removeClass("fixedNav");
 		}
-
-
-
 
 	}
 

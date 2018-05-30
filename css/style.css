@@ -161,7 +161,7 @@ body {
     color: #444;
 }
 
-.contactButton {
+.contactButton, .borderBtn {
 	color: #fff;
     padding: 15px 20px;
     display: inline-block;
